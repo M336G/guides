@@ -1,6 +1,6 @@
 ---
 title: Publishing your GDPS (+ some tips)
-description: How to publish your GDPS files correctly and where to upload it
+description: How to publish your GDPS files correctly and where to upload them
 ---
 
 Not sure where to upload your GDPS files or if you're setting them up correctly? This guide gives you some tips on how to upload your GDPS files the right way!

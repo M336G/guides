@@ -1,6 +1,6 @@
 ---
 title: Mettre en ligne votre GDPS (+ quelques conseils)
-description: Comment mettre en ligne votre GDPS correctement et où l'uploader
+description: Comment mettre en ligne les fichiers de votre GDPS correctement et où les uploader
 ---
 
 Vous ne savez pas où héberger les fichiers de votre GDPS ou si vous les préparez correctement ? Ce guide vous donne quelques conseils pour mettre les fichiers de votre GDPS en ligne correctement !
