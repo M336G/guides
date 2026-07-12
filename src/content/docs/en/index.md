@@ -9,6 +9,6 @@ hero:
     html: '<img src="/favicon.svg" alt="M336 logo" width="300" height="300" />'
   actions:
     - text: Check out GDPS Guides
-      link: /gdps/custom-rate-button/
+      link: /en/gdps/custom-rate-button/
       icon: right-arrow
 ---

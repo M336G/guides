@@ -6,9 +6,21 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
     site: 'https://guides.m336.dev',
+	redirects: { '/': '/en/' },
 	trailingSlash: 'always',
 
     integrations: [starlight({
+		defaultLocale: 'en',
+		locales: {
+			en: {
+				label: 'English',
+			},
+			fr: {
+				label: 'Français',
+				lang: "fr"
+			}
+		},
+
 		logo: {
 			src: './public/favicon.svg',
 			replacesTitle: false
@@ -38,7 +50,13 @@ export default defineConfig({
             {
                 label: 'GDPS Guides',
                 items: [
-                    { label: 'Custom RobTop-Like Rate Button', slug: 'gdps/custom-rate-button' },
+                    {
+						label: 'Custom RobTop-Like Rate Button',
+        				translations: {
+							fr: 'Bouton de Rate Personnalisé'
+						},
+						slug: 'gdps/custom-rate-button'
+					}
                 ],
             }
         ],
