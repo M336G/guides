@@ -56,6 +56,13 @@ export default defineConfig({
 							fr: 'Bouton de Rate Personnalisé'
 						},
 						slug: 'gdps/custom-rate-button'
+					},
+                    {
+						label: 'Publishing your GDPS (+ some tips)',
+        				translations: {
+							fr: 'Mettre en ligne votre GDPS'
+						},
+						slug: 'gdps/publishing-gdps-tips'
 					}
                 ],
             }
