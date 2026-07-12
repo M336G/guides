@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guides.m336.dev/sitemap-index.xml
