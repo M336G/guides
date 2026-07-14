@@ -12,13 +12,8 @@ export default defineConfig({
     integrations: [starlight({
 		defaultLocale: 'en',
 		locales: {
-			en: {
-				label: 'English',
-			},
-			fr: {
-				label: 'Français',
-				lang: "fr"
-			}
+			en: { label: 'English' },
+			fr: { label: 'Français', lang: "fr" }
 		},
 
 		logo: {
@@ -52,24 +47,23 @@ export default defineConfig({
                 items: [
                     {
 						label: 'Custom RobTop-Like Rate Button',
-        				translations: {
-							fr: 'Bouton de Rate Personnalisé'
-						},
+        				translations: { fr: 'Bouton de Rate Personnalisé' },
 						slug: 'gdps/custom-rate-button'
 					},
                     {
 						label: 'Publishing your GDPS (+ some tips)',
-        				translations: {
-							fr: 'Mettre en ligne votre GDPS'
-						},
+        				translations: { fr: 'Mettre en ligne votre GDPS' },
 						slug: 'gdps/publishing-gdps-tips'
 					},
                     {
 						label: 'List of all commands',
-        				translations: {
-							fr: 'Listes de Toutes les Commandes'
-						},
+        				translations: { fr: 'Listes de Toutes les Commandes' },
 						slug: 'gdps/all-commands-list'
+					},
+                    {
+						label: "Enabling Level Info's Sent indicator",
+        				translations: { fr: "Activer l'indicateur Sent Level Info" },
+						slug: 'gdps/levelinfo-sent-indicator'
 					}
                 ],
             }
