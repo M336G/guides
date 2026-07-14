@@ -63,6 +63,13 @@ export default defineConfig({
 							fr: 'Mettre en ligne votre GDPS'
 						},
 						slug: 'gdps/publishing-gdps-tips'
+					},
+                    {
+						label: 'List of all commands',
+        				translations: {
+							fr: 'Listes de Toutes les Commandes'
+						},
+						slug: 'gdps/all-commands-list'
 					}
                 ],
             }
