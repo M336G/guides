@@ -64,6 +64,11 @@ export default defineConfig({
 						label: "Enabling Level Info's Sent indicator",
         				translations: { fr: "Activer l'indicateur Sent Level Info" },
 						slug: 'gdps/levelinfo-sent-indicator'
+					},
+                    {
+						label: "Growing your GDPS (+ some tips)",
+        				translations: { fr: "Développer votre GDPS" },
+						slug: 'gdps/growing-gdps-tips'
 					}
                 ],
             }
