@@ -56,7 +56,7 @@ export default defineConfig({
 						slug: 'gdps/publishing-gdps-tips'
 					},
                     {
-						label: 'List of all commands',
+						label: 'List of All Commands',
         				translations: { fr: 'Listes de Toutes les Commandes' },
 						slug: 'gdps/all-commands-list'
 					},
@@ -69,6 +69,11 @@ export default defineConfig({
 						label: "Growing your GDPS (+ some tips)",
         				translations: { fr: "Développer votre GDPS" },
 						slug: 'gdps/growing-gdps-tips'
+					},
+                    {
+						label: "Adding Custom Badges to your GDPS",
+        				translations: { fr: "Ajouter des Badges Personnalisés" },
+						slug: 'gdps/adding-custom-badges'
 					}
                 ],
             }
