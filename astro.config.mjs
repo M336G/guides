@@ -74,6 +74,11 @@ export default defineConfig({
 						label: "Adding Custom Badges to your GDPS",
         				translations: { fr: "Ajouter des Badges Personnalisés" },
 						slug: 'gdps/adding-custom-badges'
+					},
+                    {
+						label: "Running a 24/7 Discord Radio Bot",
+        				translations: { fr: "Avoir un bot Discord Radio 24/7" },
+						slug: 'gdps/running-radio-bot'
 					}
                 ],
             }

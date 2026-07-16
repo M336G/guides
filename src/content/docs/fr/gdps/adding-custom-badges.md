@@ -13,7 +13,6 @@ Ce guide vous montrera comment ajouter des badges personnalisés en jeu pour les
 
 ## Prérequis
 Pour suivre ce guide, vous aurez besoin de :
-
 - Un accès complet au SFTP de votre GDPS
 - Quelques badges déjà créés (après tout, c'est le but de ce guide.. non ? *Résolution recommandée : 92×92, au format PNG uniquement*)
 
