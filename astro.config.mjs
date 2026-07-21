@@ -79,8 +79,13 @@ export default defineConfig({
 						label: "Running a 24/7 Discord Radio Bot",
         				translations: { fr: "Avoir un bot Discord Radio 24/7" },
 						slug: 'gdps/running-radio-bot'
+					},
+                    {
+						label: "Editing your GDPS textures",
+        				translations: { fr: "Modifier les textures de votre GDPS" },
+						slug: 'gdps/editing-gdps-textures'
 					}
-                ],
+                ]
             }
         ],
 		}), sitemap()],
