@@ -135,7 +135,8 @@ export default defineConfig({
                     {
 						label: "Self-hosting your own SFX converter",
 						translations: {
-							fr: "Auto-héberger un convertisseur de SFXs"
+							fr: "Auto-héberger un convertisseur de SFXs",
+							es: "Hostear tu propio convertidor de SFX"
 						},
 						slug: 'gdps/self-hosting-sfx-converter'
 					}
