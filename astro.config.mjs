@@ -22,7 +22,7 @@ export default defineConfig({
 			es: { label: 'Español', lang: "es" },
 			fr: { label: 'Français', lang: "fr" },
 			ru: { label: 'Русский', lang: "ru" },
-			ua: { label: 'Українська', lang: "ua" }
+			ua: { label: 'Українська', lang: "uk" }
 		},
 
 		logo: {
@@ -59,8 +59,8 @@ export default defineConfig({
         				translations: {
 							es: 'Botón de Rate Personalizado estilo RobTop',
 							fr: 'Bouton de Rate Personnalisé',
-							ru: 'Кастомная кнопка рейта, как у RobTop',
-							ua: 'Кастомна кнопка рейту, як у RobTop'
+							ru: "Кастомная кнопка рейта как у RobTop'а",
+							ua: 'Власна кнопка оцінювання, як у RobTop’а'
 						},
 						slug: 'gdps/custom-rate-button'
 					},
@@ -80,7 +80,7 @@ export default defineConfig({
 							es: 'Lista de Todos los Comandos',
 							fr: 'Listes de Toutes les Commandes',
 							ru: 'Список всех команд',
-							ua: 'Список усіх команд'
+							ua: 'Перелік усіх команд'
 						},
 						slug: 'gdps/all-commands-list'
 					},
@@ -89,8 +89,8 @@ export default defineConfig({
         				translations: {
 							es: "Activar el Indicador de Envío de Level Info",
 							fr: "Activer l'indicateur Sent Level Info",
-							ru: "Включение индикатора 'Level Info's Sent'",
-							ua: "Увімкнення індикатора 'Level Info's Sent'"
+							ru: "Включение индикатора отправки в Level Info",
+							ua: "Увімкнення індикатора надсилання в Level Info"
 						},
 						slug: 'gdps/levelinfo-sent-indicator'
 					},
@@ -107,10 +107,10 @@ export default defineConfig({
                     {
 						label: "Adding Custom Badges to your GDPS",
         				translations: {
-							es: "Agregar Insignias Personalizadas a tu GDSP",
+							es: "Agregar Insignias Personalizadas a tu GDPS",
 							fr: "Ajouter des Badges Personnalisés",
-							ru: "Добавление пользовательских значков",
-							ua: "Додавання користувацьких значків"
+							ru: "Добавление кастомных бейджиков в ваш GDPS",
+							ua: "Додавання власних бейджів до вашого GDPS"
 						},
 						slug: 'gdps/adding-custom-badges'
 					},
@@ -119,8 +119,8 @@ export default defineConfig({
         				translations: {
 							es: "Tener un Bot de Radio de Discord 24/7",
 							fr: "Avoir un bot Discord Radio 24/7",
-							ru: "Запуск круглосуточного радио-бота в Discord",
-							ua: "Запуск цілодобового радіо-бота в Discord"
+							ru: "Запуск круглосуточного радиобота в Discord",
+							ua: "Запуск цілодобового радіобота в Discord"
 						},
 						slug: 'gdps/running-radio-bot'
 					},
@@ -128,7 +128,9 @@ export default defineConfig({
 						label: "Editing your GDPS textures",
         				translations: {
 							fr: "Modifier les textures de votre GDPS",
-							es: "Modificar las texturas de tu GDPS"
+							es: "Modificar las texturas de tu GDPS",
+							ru: "Редактирование текстур вашего GDPS",
+							ua: "Редагування текстур вашого GDPS"
 						},
 						slug: 'gdps/editing-gdps-textures'
 					},
@@ -136,7 +138,9 @@ export default defineConfig({
 						label: "Self-hosting your own SFX converter",
 						translations: {
 							fr: "Auto-héberger un convertisseur de SFXs",
-							es: "Hostear tu propio convertidor de SFX"
+							es: "Hostear tu propio convertidor de SFX",
+							ru: "Самостоятельный хостинг собственного SFX-конвертера",
+							ua: "Самостійний хостинг власного SFX-конвертера"
 						},
 						slug: 'gdps/self-hosting-sfx-converter'
 					}
