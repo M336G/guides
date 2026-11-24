@@ -1,114 +1,107 @@
 ---
 title: Перелік усіх команд
-description: Усі команди, які ви можете використовувати на GDPS за допомогою форку GMDprivateServer від MegaSa1nt.
+description: Усі команди, які ви можете використовувати на GDPS за допомогою форку GMDprivateServer від MegaSa1nt
 ---
 
 Це всі команди, доступні на GDPS за допомогою [форку GMDprivateServer від MegaSa1nt](https://github.com/MegaSa1nt/GMDprivateServer/tree/master)!
 
 *Деякі команди мають опціональні аргументи, які для простоти тут не перелічені.*
 
-## Команди для рівня
+## Команди рівнів
 Ці команди можна використовувати в розділі коментарів під рівнем!
 
 ### Оцінка
 | Команда | Дозвіл | Опис |
 | --- | --- | --- |
-| `!rate` / `!r <складність> <зірки> <монетки> <оцінка>` | `commandRate` | Оцінює рівень. `складність`: `auto`, `easy`, `normal`, `hard`, `harder`, `insane` або `demon`. `монетки`: `1` = увімкнено, `0` = вимкнено. `оцінка`: `0` = проста оцінка, `1` = featured, `2` = epic, `3` = legendary, `4` = mythic. |
+| `!rate` / `!r <складність> <зірки> <монетки> <feature>` | `commandRate` | Оцінює рівень. `складність`: `auto`, `easy`, `normal`, `hard`, `harder`, `insane` або `demon`. `монетки`: `1` = увімк., `0` = вимк. `feature`: `0` = лише оцінка, `1` = featured, `2` = epic, `3` = legendary, `4` = mythic. |
 | `!unrate` / `!unr` | `commandRate` | Повністю знімає оцінку з рівня. |
-| `!send <складність> <зірки> <оцінка>` | `actionSuggestRating` | Надсилає рівень на оцінку. `складність`: `auto`, `easy`, `normal`, `hard`, `harder`, `insane` або `demon`. `оцінка`: `0` = проста оцінка, `1` = featured, `2` = epic, `3` = legendary, `4` = mythic. |
-| `!unsend` | `actionSuggestRating` | Повністю скасовує відправку рівня. |
+| `!send <складність> <зірки> <feature>` | `actionSuggestRating` | Надсилає рівень на оцінку. `складність`: `auto`, `easy`, `normal`, `hard`, `harder`, `insane` або `demon`. `feature`: `0` = лише оцінка, `1` = featured, `2` = epic, `3` = legendary, `4` = mythic. |
+| `!unsend` | `actionSuggestRating` | Повністю скасовує надсилання рівня. |
 
 ### Feature
 | Команда | Дозвіл | Опис |
 | --- | --- | --- |
-| `!rate` / `!f` | `commandFeature` | Робить рівень «Featured». |
+| `!feature` / `!f` | `commandFeature` | Робить рівень Featured. |
 | `!epic` | `commandEpic` | Робить рівень епічним. |
-| `!legendary` | `commandEpic` | Присвоює рівню статус «Легендарний». |
-| `!mythic` | `commandEpic` | Присвоює рівню статус «Міфічний». |
-| `!unfeature` | `commandFeature` | Скасовує позначку «Вибраний». |
-| `!unepic` | `commandEpic` | Скасовує позначку «Епічний». |
-| `!unlegendary` | `commandEpic` | Скасовує легендарну оцінку. |
-| `!unmythic` | `commandEpic` | Скасовує міфічну оцінку. |
+| `!legendary` | `commandEpic` | Робить рівень легендарним. |
+| `!mythic` | `commandEpic` | Робить рівень міфічним. |
+| `!unfeature` | `commandFeature` | Знімає статус Featured. |
+| `!unepic` | `commandEpic` | Знімає епічний статус. |
+| `!unlegendary` | `commandEpic` | Знімає легендарний статус. |
+| `!unmythic` | `commandEpic` | Знімає міфічний статус. |
 
 ### Daily
 | Команда | Дозвіл | Опис |
 | --- | --- | --- |
-| `!daily` / `!da` | `commandDaily` | Встановлює рівень як наступний щоденний рівень. |
-| `!weekly` / `!w` | `commandWeekly` | Встановлює рівень як наступний щотижневий рівень. |
-| `!event` / `!ev <minutes> <reward ID> <amount>` | `commandEvent` | Встановлює рівень як наступний івентовий рівень на певну тривалість. Додати кілька нагород: `!event <minutes> <reward ID> <amount> <reward ID> <amount>...` [Ідентифікатори нагород](#Нагороди). |
+| `!daily` / `!da` | `commandDaily` | Встановлює рівень як наступний щоденний. |
+| `!weekly` / `!w` | `commandWeekly` | Встановлює рівень як наступний щотижневий. |
+| `!event` / `!ev <minutes> <reward ID> <amount>` | `commandEvent` | Встановлює рівень як наступний івент-рівень на вказаний час. Щоб додати кілька нагород: `!event <minutes> <reward ID> <amount> <reward ID> <amount>...` [Ідентифікатори нагород](#нагороди). |
 
 ### Монетки та бали Креатора
 | Команда | Дозвіл | Опис |
 | --- | --- | --- |
-| `!verifycoins` / `!vc` | `commandVerify` | Перевіряє монетки рівня. |
-| `!unverifycoins` | `commandVerify` | Знімає верифікацію монетки рівня. |
-| `!sharecp <username>` | `commandSharecpOwn` / `commandSharecpAll` | Поділитися балами творця, отриманими з рівня, з іншим користувачем |
+| `!verifycoins` / `!vc` | `commandVerify` | Верифікує монетки рівня. |
+| `!unverifycoins` | `commandVerify` | Знімає верифікацію з монеток рівня. |
+| `!sharecp <username>` | `commandSharecpOwn` / `commandSharecpAll` | Ділиться балами творця за рівень з іншим користувачем. |
 
-### Управління
+### Керування
 | Команда | Дозвіл | Опис |
 | --- | --- | --- |
 | `!setacc` / `!sa <username/account ID>` | `commandSetacc` | Змінює творця рівня. |
-| `!lockUpdating` / `!lu` | `commandLockUpdating` | Забороняє творцю рівня оновлювати рівень |
-| `!unlockUpdating` / `!unlu` | `commandLockUpdating` | Дозволяє творцеві рівня знову оновити рівень |
-| `!rename` / `!re <name>` | `commandRenameOwn` / `commandRenameAll` | Перейменування рівня. |
-| `!description` / `!desc <description>` | `commandDescriptionOwn` / `commandDescriptionAll` | Зміна опису рівня. |
-| `!song` / `!s <song ID>` | `commandSongOwn` / `commandSongAll` | Зміна пісні рівня. |
+| `!lockUpdating` / `!lu` | `commandLockUpdating` | Забороняє творцю оновлювати рівень. |
+| `!unlockUpdating` / `!unlu` | `commandLockUpdating` | Знову дозволяє творцю оновлювати рівень. |
+| `!rename` / `!re <name>` | `commandRenameOwn` / `commandRenameAll` | Перейменовує рівень. |
+| `!description` / `!desc <description>` | `commandDescriptionOwn` / `commandDescriptionAll` | Змінює опис рівня. |
+| `!song` / `!s <song ID>` | `commandSongOwn` / `commandSongAll` | Змінює пісню рівня. |
 | `!public` / `!pub` | `commandPublicOwn` / `commandPublicAll` | Робить рівень публічним. |
-| `!unlist` | `commandUnlistOwn` / `commandUnlistAll` | Робить рівень приватним. |
-| `!ldm` | `commandLdmOwn` / `commandLdmAll` | Увімкнення LDM на рівні. |
+| `!unlist` | `commandUnlistOwn` / `commandUnlistAll` | Робить рівень прихованим. |
+| `!ldm` | `commandLdmOwn` / `commandLdmAll` | Вмикає LDM на рівні. |
 | `!unldm` | `commandLdmOwn` / `commandLdmAll` | Вимикає LDM на рівні. |
-| `!password` / `!pass` / `!p <6 цифр>` | `commandPassOwn` / `commandPassAll` | Встановити пароль для копіювання рівня. Введіть `000000`, щоб скасувати його. |
-| `!lockComments` / `!lc` | `commandLockCommentsOwn` / `commandLockCommentsAll` | Блокує коментарі під рівнем. |
-| `!unlockComments` / `!unlc` | `commandLockCommentsOwn` / `commandLockCommentsAll` | Розблокування коментарів під рівнем. |
+| `!password` / `!pass` / `!p <6 цифр>` | `commandPassOwn` / `commandPassAll` | Встановлює пароль для копіювання рівня. Надішліть `000000`, щоб прибрати його. |
+| `!lockComments` / `!lc` | `commandLockCommentsOwn` / `commandLockCommentsAll` | Закриває коментарі під рівнем. |
+| `!unlockComments` / `!unlc` | `commandLockCommentsOwn` / `commandLockCommentsAll` | Відкриває коментарі під рівнем. |
 | `!delete` / `!delet` / `!d` | `commandDelete` | Видаляє рівень. |
 
+![Приклад команди рівня](../../../../assets/gdps/all-commands-list/level-command-example.webp)
 
+## Команди списків
+Ці команди можна використовувати в розділі коментарів під списком!
 
-![Приклад команди рівнів](../../../../assets/gdps/all-commands-list/level-command-example.webp)
-
-## Команди Листов
-Ці команди можуть бути використані в секції коментарів під листом!
-
-### Оцінка
+### Оцінка та Feature
 | Команда | Дозвіл | Опис |
 | --- | --- | --- |
-| `!rate` / `!r <нагорода> <рівень складності> <featured> <кількість рівнів>` | `commandRate` | Оцінює рівень. `складність`: `auto`, `easy`, `normal`, `hard`, `harder`, `insane` або `demon`. `featured`: `0` = проста оцінка, `1` = featured. `count`: кількість рівнів, які потрібно пройти для отримання нагороди. Тільки якщо з `actionSuggestRating`, воно пропонує його замість цього. [Ідентифікатори нагород](#Нагороди). |
-| `!rate` / `!f` | `commandFeature` | Робить список «Featured». |
-| `!unfeature` | `commandFeature` | Знімає позначку «Featured». |
+| `!rate` / `!r <нагорода> <складність> <featured> <кількість>` | `commandRate` | Оцінює список. `складність`: `auto`, `easy`, `normal`, `hard`, `harder`, `insane` або `demon`. `featured`: `0` = лише оцінка, `1` = featured. `кількість`: скільки рівнів потрібно пройти для отримання нагороди. Якщо є лише `actionSuggestRating`, команда натомість пропонує список на оцінку. [Ідентифікатори нагород](#нагороди). |
+| `!feature` / `!f` | `commandFeature` | Робить список Featured. |
+| `!unfeature` | `commandFeature` | Знімає статус Featured. |
 
-### Управління
+### Керування
 | Команда | Дозвіл | Опис |
 | --- | --- | --- |
 | `!rename` / `!re <name>` | `commandRenameOwn` / `commandRenameAll` | Перейменовує список. |
 | `!description` / `!desc <description>` | `commandDescriptionOwn` / `commandDescriptionAll` | Змінює опис списку. |
 | `!setacc` / `!sa <username/account ID>` | `commandSetacc` | Змінює творця списку. |
-| `!unlist` | `commandUnlistOwn` / `commandUnlistAll` | Робить список приватним. Використовуйте `!unlist 0` для публічного доступу, `!unlist 1` для доступу лише друзям. |
-| `!lockComments` / `!lc` | `commandLockCommentsOwn` / `commandLockCommentsAll` | Блокує коментарі під списком. |
-| `!unlockComments` / `!unlc` | `commandLockCommentsOwn` / `commandLockCommentsAll` | Розблоковує коментарі під списком. |
-| `!delete` / `!d` | `commandDelete` | Видаляє лист. |
+| `!unlist` | `commandUnlistOwn` / `commandUnlistAll` | Робить список прихованим. Використовуйте `!unlist 0`, щоб зробити його публічним, і `!unlist 1` — лише для друзів. |
+| `!lockComments` / `!lc` | `commandLockCommentsOwn` / `commandLockCommentsAll` | Закриває коментарі під списком. |
+| `!unlockComments` / `!unlc` | `commandLockCommentsOwn` / `commandLockCommentsAll` | Відкриває коментарі під списком. |
+| `!delete` / `!d` | `commandDelete` | Видаляє список. |
 
-![Приклад команд листів](../../../../assets/gdps/all-commands-list/list-command-example.webp)
-
-
-
+![Приклад команди списку](../../../../assets/gdps/all-commands-list/list-command-example.webp)
 
 ## Команди профілю
-Ці команди можна використовувати в розділі коментарів профілю! Працюють лише в тому випадку, якщо GDPS підтримує прив’язку акаунтів Discord.
+Ці команди можна використовувати в розділі коментарів під вашим профілем! Працюють лише в тому випадку, якщо GDPS підтримує прив’язку Discord-акаунтів.
 
 | Команда | Опис |
 | --- | --- |
-| `!discord link <discord ID>` | Починає процес прив'язки та надсилає 4-значний код у приватне повідомлення. |
-| `!discord accept <code>` | Прив'язує ваш профіль до Discord, якщо код правильний. |
-| `!discord unlink` | Скасовує прив’язку вашого акаунта Discord. |
+| `!discord link <discord ID>` | Починає процес прив’язки та надсилає 4-значний код у приватні повідомлення. |
+| `!discord accept <code>` | Прив’язує ваш профіль до Discord-акаунта, якщо код правильний. |
+| `!discord unlink` | Відв’язує ваш профіль від Discord-акаунта. |
 
-![Приклад команд профілю](../../../../assets/gdps/all-commands-list/profile-command-example.webp)
-
-
+![Приклад команди профілю](../../../../assets/gdps/all-commands-list/profile-command-example.webp)
 
 ## Нагороди
-Це ідентифікатори нагород різних типів
+Це ID для кожного типу нагород.
 
-### Нагороди Shard
+### Shard-нагороди
 | ID | Нагорода |
 | --- | --- |
 | **1** | Fire Shard |
@@ -122,7 +115,7 @@ description: Усі команди, які ви можете використо�
 | **13** | Light Shard |
 | **14** | Soul Shard |
 
-### Іконки нагород
+### Icon-нагороди
 | ID | Нагорода |
 | --- | --- |
 | **1001** | Cube |

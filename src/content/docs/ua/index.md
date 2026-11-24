@@ -11,7 +11,7 @@ hero:
     - text: Ознайомтеся з інструкціями для приваток!
       link: /ua/gdps/custom-rate-button/
       icon: right-arrow
-    - text: Check the source code
+    - text: Переглянути вихідний код
       link: https://github.com/M336G/guides
       icon: github
       variant: secondary
